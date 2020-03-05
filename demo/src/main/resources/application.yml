@@ -1,0 +1,21 @@
+#person:
+#  name: 张三
+#  age: 18
+#  boss: false
+#  map: {ad: cd,cd: df}
+#  dog:
+#    name: 旺财
+#    age: 3
+
+#server:
+#  port: 8080
+#spring:
+#  profiles:
+#    active: dev
+#---
+#server:
+#  port: 8082
+#spring:
+#  profiles: dev
+#---
+
