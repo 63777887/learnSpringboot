@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.bean.Person;
+import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -31,6 +32,7 @@ public class DemoApplicationTest {
         System.out.println(b+" --> "+c);
         int count=0;
         count++;
+        Gson gson = new Gson();
     }
     //测试person配置的值
     @Test

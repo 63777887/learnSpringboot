@@ -88,7 +88,7 @@
             <optional>true</optional>
         </dependency>
 
-<!--        jquery的pom文件->webjars-->
+<!--        jquery的pom文件->webjars,在访问的时候只需要写webjars下面资源的名称即可-->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
@@ -97,10 +97,10 @@
 
 <!--        bootstrap的pom文件->webjars-->
         <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>4.4.1-1</version>
-        </dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>bootstrap</artifactId>
+        <version>4.4.1-1</version>
+    </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
