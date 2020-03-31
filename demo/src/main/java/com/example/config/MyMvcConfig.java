@@ -1,5 +1,6 @@
 package com.example.config;
 
+import com.example.component.LoginHandlerInterceptor;
 import com.example.component.MyLocaleResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,8 +32,8 @@ public class MyMvcConfig implements WebMvcConfigurer {
             //注册拦截器
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
-//                registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
-//                        excludePathPatterns("/","/index","/user/login","/webjars/**","/asserts/**");
+                registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
+                        excludePathPatterns("/","/index","/user/login","/webjars/**","/asserts/**");
             }
         };
         return webMvcConfigurer;
